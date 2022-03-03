@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  
+  function findTotalCount(str) {
+  let count = 0;
+
+  for (let ch of str) {
+    if (ch >= "0" && ch <= "9") {
+      count++;
+    }
+  }
+  return count;
+}
+
+const str1 = "Hello4 World65 123 !!";
+const str2 = "123and 456 and 78-1";
+const str3 = "Hello World !!";
+
+console.log(findTotalCount(str1));
+console.log(findTotalCount(str2));
+console.log(findTotalCount(str3));
+
+//   function getCountOfDigits(str) {
+//   return str.replace(/[^0-9]/g, '').length;
+// }
+
+// console.log(getCountOfDigits('12hello34')); // 👉️ 4
+// console.log(getCountOfDigits('hello')); // 👉️ 0
+// console.log(getCountOfDigits('hello12.5')); // 👉️ 3
+</script>
+</body>
+</html>
